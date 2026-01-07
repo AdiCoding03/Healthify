@@ -1,6 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 import os
+import pandas as pd
 from dotenv import load_dotenv
 
 
@@ -45,7 +46,7 @@ name = st.sidebar.text_input("Enter your name")
 gender = st.sidebar.selectbox("Select your gender", ["Male", "Female"])
 age = st.sidebar.text_input("Enter your age (years)")
 weight = st.sidebar.text_input("Enter your weight (kg)")
-height = st.sidebar.text_input("Enter your height (cm)")
+height = st.sidebar.text_input("Enter your height (feet)")
 fitness = st.sidebar.slider("Rate your fitness (0 = Poor, 5 = Excellent)", 0, 5)
 
 
